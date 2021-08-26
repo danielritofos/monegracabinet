@@ -8,14 +8,14 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.png">
-    <title>Adminmart Template - The Ultimate Multipurpose admin template</title>
+    <title>Личный кабинет Monegra</title>
     <link href="assets/extra-libs/c3/c3.min.css" rel="stylesheet">
     <link href="assets/libs/chartist/dist/chartist.min.css" rel="stylesheet">
     <link href="assets/extra-libs/jvector/jquery-jvectormap-2.0.2.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <!-- <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script> -->
+    <!-- <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script> -->
 </head>
 
 <body>
@@ -55,7 +55,7 @@
                                 id="bell" role="button" data-toggle="dropdown" aria-haspopup="true"
                                 aria-expanded="false">
                                 <span><i data-feather="bell" class="svg-icon"></i></span>
-                                <span class="badge badge-primary notify-no rounded-circle">5</span>
+                                <span class="badge badge-orange text-white notify-no rounded-circle">5</span>
                             </a>
                             <div class="dropdown-menu dropdown-menu-left mailbox animated bounceInDown">
                                 <ul class="list-style-none">
@@ -197,12 +197,14 @@
             <div class="scroll-sidebar" data-sidebarbg="skin6">
                 <nav class="sidebar-nav">
                     <ul id="sidebarnav">
-                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="index.html"
-                                aria-expanded="false"><i data-feather="home" class="feather-icon"></i><span
-                                    class="hide-menu">Главная</span></a></li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link sidebar-link" href="index.html" aria-expanded="false">
+                                <i data-feather="home" class="feather-icon"></i>
+                                <span class="hide-menu">Главная</span>
+                            </a>
+                        </li>
                         <li class="list-divider"></li>
                         <li class="nav-small-cap"><span class="hide-menu">Дополнительно</span></li>
-
                         <li class="sidebar-item"> <a class="sidebar-link" href="ticket-list.html"
                                 aria-expanded="false"><i data-feather="tag" class="feather-icon"></i><span
                                     class="hide-menu">Список обращений
@@ -262,7 +264,7 @@
                                     <div class="d-inline-flex align-items-center">
                                         <h2 class="text-dark mb-1 font-weight-medium">236</h2>
                                         <span
-                                            class="badge bg-primary font-12 text-white font-weight-medium badge-pill ml-2 d-lg-block d-md-none">+1</span>
+                                            class="badge bg-orange font-12 text-white font-weight-medium badge-pill ml-2 d-lg-block d-md-none">+1</span>
                                     </div>
                                     <h6 class="text-muted font-weight-normal mb-0 w-100 text-truncate">к-во партнёров</h6>
                                 </div>
@@ -294,7 +296,7 @@
                                     <div class="d-inline-flex align-items-center">
                                         <h2 class="text-dark mb-1 font-weight-medium">5%</h2>
                                         <span
-                                            class="badge bg-danger font-12 text-white font-weight-medium badge-pill ml-2 d-md-none d-lg-block">-1.33%</span>
+                                            class="badge bg-orange font-12 text-white font-weight-medium badge-pill ml-2 d-md-none d-lg-block">-1.33%</span>
                                     </div>
                                     <h6 class="text-muted font-weight-normal mb-0 w-100 text-truncate">средний процент (мес)</h6>
                                 </div>
@@ -308,8 +310,7 @@
                         <div class="card-body">
                             <div class="d-flex d-lg-flex d-md-block align-items-center">
                                 <div>
-                                    <h2 class="text-dark mb-1 font-weight-medium"><sup
-                                            class="set-doller">$</sup>864</h2>
+                                    <h2 class="text-dark mb-1 font-weight-medium"><sup class="set-doller">$</sup>864</h2>
                                     <h6 class="text-muted font-weight-normal mb-0 w-100 text-truncate">общий заработок</h6>
                                 </div>
                                 <div class="ml-auto mt-md-3 mt-lg-0">
@@ -534,7 +535,7 @@
                                                 <th class="border-0 font-14 font-weight-medium text-muted text-center">
                                                     Дата регистрации
                                                 </th>
-                                                <th class="border-0 font-14 font-weight-medium text-muted">Сумма бонусов</th>
+                                                <th class="border-0 font-14 font-weight-medium text-muted text-center">Сумма бонусов</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -559,7 +560,7 @@
                                                     class="border-top-0 text-center font-weight-medium text-muted px-2 py-4">
                                                     35
                                                 </td>
-                                                <td class="font-weight-medium text-dark border-top-0 px-2 py-4">$123
+                                                <td class="font-weight-medium text-dark border-top-0 px-2 py-4 text-center">$123
                                                 </td>
                                             </tr>
                                             <tr>
@@ -582,7 +583,7 @@
                                                         data-placement="top" title="опытный"></i>
                                                 </td>
                                                 <td class="text-center text-muted font-weight-medium px-2 py-4">32</td>
-                                                <td class="font-weight-medium text-dark px-2 py-4">$213</td>
+                                                <td class="font-weight-medium text-dark px-2 py-4 text-center">$213</td>
                                             </tr>
                                             <tr>
                                                 <td class="px-2 py-4">
@@ -604,7 +605,7 @@
                                                         data-placement="top" title="Новичок"></i>
                                                 </td>
                                                 <td class="text-center text-muted font-weight-medium px-2 py-4">29</td>
-                                                <td class="font-weight-medium text-dark px-2 py-4">$123</td>
+                                                <td class="font-weight-medium text-dark px-2 py-4 text-center">$123</td>
                                             </tr>
                                             <tr>
                                                 <td class="px-2 py-4">
@@ -614,18 +615,122 @@
                                                                 alt="user" class="rounded-circle" width="45"
                                                                 height="45" /></div>
                                                         <div class="">
-                                                            <h5 class="text-dark mb-0 font-16 font-weight-medium">Личное приглашение
+                                                            <h5 class="text-dark mb-0 font-16 font-weight-medium">Анна Заплётная
                                                             </h5>
                                                             <span class="text-muted font-14">hgover@gmail.com</span>
                                                         </div>
                                                     </div>
                                                 </td>
-                                                <td class="text-muted px-2 py-4 font-14">Hosting Press HTML</td>
+                                                <td class="text-muted px-2 py-4 font-14">Личное приглашение</td>
                                                 <td class="text-center px-2 py-4"><i
                                                         class="fa fa-circle text-danger font-12" data-toggle="tooltip"
                                                         data-placement="top" title="Приглашение отправлено"></i></td>
                                                 <td class="text-center text-muted font-weight-medium px-2 py-4">23</td>
-                                                <td class="font-weight-medium text-dark px-2 py-4">$0</td>
+                                                <td class="font-weight-medium text-dark px-2 py-4 text-center">$0</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center mb-4">
+                                    <h4 class="card-title">Продажи</h4>
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table no-wrap v-middle mb-0">
+                                        <thead>
+                                            <tr class="border-0">
+                                                <th class="border-0 font-14 font-weight-medium text-muted">Партнёр
+                                                </th>
+                                                <th class="border-0 font-14 font-weight-medium text-muted px-2">Продукт
+                                                </th>
+                                                <th class="border-0 font-14 font-weight-medium text-muted text-center">
+                                                    Сумма
+                                                </th>
+                                                <th class="border-0 font-14 font-weight-medium text-muted text-center">Бонус</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="border-top-0 px-2 py-4">
+                                                    <div class="d-flex no-block align-items-center">
+                                                        <div class="mr-3"><img
+                                                                src="../assets/images/users/widget-table-pic1.jpg"
+                                                                alt="user" class="rounded-circle" width="45"
+                                                                height="45" /></div>
+                                                        <div class="">
+                                                            <h5 class="text-dark mb-0 font-16 font-weight-medium">Анна Ростова</h5>
+                                                            <span class="text-muted font-14">hgover@gmail.com</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="border-top-0 text-muted px-2 py-4 font-14">Франшиза #2</td>
+                                                <td
+                                                    class="border-top-0 text-center font-weight-medium text-muted px-2 py-4">
+                                                    $3500
+                                                </td>
+                                                <td class="font-weight-medium text-dark border-top-0 px-2 py-4 text-center">$350
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="px-2 py-4">
+                                                    <div class="d-flex no-block align-items-center">
+                                                        <div class="mr-3"><img
+                                                                src="../assets/images/users/widget-table-pic2.jpg"
+                                                                alt="user" class="rounded-circle" width="45"
+                                                                height="45" /></div>
+                                                        <div class="">
+                                                            <h5 class="text-dark mb-0 font-16 font-weight-medium">Денис Детров
+                                                            </h5>
+                                                            <span class="text-muted font-14">Kristeen@gmail.com</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="text-muted px-2 py-4 font-14">Курс Profi</td>
+                                                <td class="text-center text-muted font-weight-medium px-2 py-4">$3200</td>
+                                                <td class="font-weight-medium text-dark px-2 py-4 text-center">$320</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="px-2 py-4">
+                                                    <div class="d-flex no-block align-items-center">
+                                                        <div class="mr-3"><img
+                                                                src="../assets/images/users/widget-table-pic3.jpg"
+                                                                alt="user" class="rounded-circle" width="45"
+                                                                height="45" /></div>
+                                                        <div class="">
+                                                            <h5 class="text-dark mb-0 font-16 font-weight-medium">Юлий Цезарь
+                                                            </h5>
+                                                            <span class="text-muted font-14">Josephs@gmail.com</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="text-muted px-2 py-4 font-14">Курс Guru</td>
+                                                <td class="text-center text-muted font-weight-medium px-2 py-4">$10 000</td>
+                                                <td class="font-weight-medium text-dark px-2 py-4 text-center">$1000</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="px-2 py-4">
+                                                    <div class="d-flex no-block align-items-center">
+                                                        <div class="mr-3"><img
+                                                                src="../assets/images/users/widget-table-pic4.jpg"
+                                                                alt="user" class="rounded-circle" width="45"
+                                                                height="45" /></div>
+                                                        <div class="">
+                                                            <h5 class="text-dark mb-0 font-16 font-weight-medium">Анна Заплётная
+                                                            </h5>
+                                                            <span class="text-muted font-14">hgover@gmail.com</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="text-muted px-2 py-4 font-14">Франшиза #1</td>
+                                                <td class="text-center text-muted font-weight-medium px-2 py-4">$3240</td>
+                                                <td class="font-weight-medium text-dark px-2 py-4 text-center">$324</td>
                                             </tr>
                                         </tbody>
                                     </table>
