@@ -63,7 +63,7 @@
                                         <div class="message-center notifications position-relative">
                                             <a href="javascript:void(0)"
                                                 class="message-item d-flex align-items-center border-bottom px-3 py-2">
-                                                <div class="btn btn-warning text-white rounded-circle btn-circle">
+                                                <div class="btn btn-danger rounded-circle btn-circle">
                                                     <i data-feather="airplay" class="text-white"></i>
                                                 </div>
                                                 <div class="w-75 d-inline-block v-middle pl-2">
@@ -74,7 +74,7 @@
                                             </a>
                                             <a href="javascript:void(0)"
                                                 class="message-item d-flex align-items-center border-bottom px-3 py-2">
-                                                <span class="btn btn-warning text-white text-white rounded-circle btn-circle"><i
+                                                <span class="btn btn-success text-white rounded-circle btn-circle"><i
                                                         data-feather="calendar" class="text-white"></i></span>
                                                 <div class="w-75 d-inline-block v-middle pl-2">
                                                     <h6 class="message-title mb-0 mt-1">Event today</h6>
@@ -86,7 +86,7 @@
                                             </a>
                                             <a href="javascript:void(0)"
                                                 class="message-item d-flex align-items-center border-bottom px-3 py-2">
-                                                <span class="btn btn-warning text-white rounded-circle btn-circle"><i
+                                                <span class="btn btn-info rounded-circle btn-circle"><i
                                                         data-feather="settings" class="text-white"></i></span>
                                                 <div class="w-75 d-inline-block v-middle pl-2">
                                                     <h6 class="message-title mb-0 mt-1">Settings</h6>
@@ -99,7 +99,7 @@
                                             </a>
                                             <a href="javascript:void(0)"
                                                 class="message-item d-flex align-items-center border-bottom px-3 py-2">
-                                                <span class="btn btn-warning text-white rounded-circle btn-circle"><i
+                                                <span class="btn btn-primary rounded-circle btn-circle"><i
                                                         data-feather="box" class="text-white"></i></span>
                                                 <div class="w-75 d-inline-block v-middle pl-2">
                                                     <h6 class="message-title mb-0 mt-1">Pavan kumar</h6> <span
@@ -112,11 +112,23 @@
                                     </li>
                                     <li>
                                         <a class="nav-link pt-3 text-center text-dark" href="javascript:void(0);">
-                                            <strong>Посмотреть все оповещения</strong>
+                                            <strong>Check all notifications</strong>
                                             <i class="fa fa-angle-right"></i>
                                         </a>
                                     </li>
                                 </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i data-feather="settings" class="svg-icon"></i>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
                             </div>
                         </li>
                         <li class="nav-item d-none d-md-block">
@@ -135,22 +147,12 @@
                     </ul>
                     <ul class="navbar-nav float-right">
                         <li class="nav-item d-none d-md-block">
-                            <a class="nav-link text-dark font-weight-bold" href="javascript:void(0)" data-toggle="tooltip" title="Финансовый баланс">
-                                <p>$12312</p>
-                            </a>
-                        </li>
-                        <li class="nav-item d-none d-md-block">
-                            <a class="nav-link text-dark font-weight-bold" href="javascript:void(0)" data-toggle="tooltip" title="Операционный баланс">
-                                <p>$412124</p>
-                            </a>
-                        </li>
-                        <li class="nav-item d-none d-md-block">
                             <a class="nav-link" href="javascript:void(0)">
                                 <form class="d-flex">
-                                    <div class="customize-input" data-toggle="tooltip" title="Реферальная ссылка. Скопируйте и отправьте тому, кого хотите пригласить.">
-                                        <input class="form-control custom-shadow custom-radius border-0 bg-white text-dark"
-                                            value="monegra.space/?ref=1241212" aria-label="reflink" disabled="">
-                                        <i class="form-control-icon icon-docs"></i>
+                                    <div class="customize-input">
+                                        <input class="form-control custom-shadow custom-radius border-0 bg-white"
+                                            type="search" placeholder="Пригласите партнёра" aria-label="invite">
+                                        <i class="form-control-icon icon-user-follow"></i>
                                     </div>
                                 </form>
                             </a>
@@ -165,6 +167,16 @@
                                         class="svg-icon"></i></span>
                             </a>
                             <div class="dropdown-menu dropdown-menu-right user-dd animated flipInY">
+                                <a class="dropdown-item" href="javascript:void(0)"><i data-feather="user"
+                                        class="svg-icon mr-2 ml-1"></i>
+                                    Профиль</a>
+                                <a class="dropdown-item" href="javascript:void(0)"><i data-feather="credit-card"
+                                        class="svg-icon mr-2 ml-1"></i>
+                                    Баланс</a>
+                                <a class="dropdown-item" href="javascript:void(0)"><i data-feather="mail"
+                                        class="svg-icon mr-2 ml-1"></i>
+                                    Входящие</a>
+                                <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="javascript:void(0)"><i data-feather="settings"
                                         class="svg-icon mr-2 ml-1"></i>
                                     Настройки</a>
@@ -172,6 +184,8 @@
                                 <a class="dropdown-item" href="javascript:void(0)"><i data-feather="power"
                                         class="svg-icon mr-2 ml-1"></i>
                                     Выйти</a>
+                                <div class="dropdown-divider"></div>
+                                <div class="pl-4 p-3"><a href="javascript:void(0)" class="btn btn-sm btn-info">Смотреть профиль</a></div>
                             </div>
                         </li>
                     </ul>
@@ -189,19 +203,14 @@
                             </a>
                         </li>
                         <li class="list-divider"></li>
-                        <li class="nav-small-cap"><span class="hide-menu">Финансы</span></li>
-                        <li class="sidebar-item"> <a class="sidebar-link" href="balance.html"
+                        <li class="nav-small-cap"><span class="hide-menu">Балансы</span></li>
+                        <li class="sidebar-item"> <a class="sidebar-link" href="ticket-list.html"
                                 aria-expanded="false"><i data-feather="dollar-sign" class="feather-icon"></i><span
                                     class="hide-menu">Операционный баланс
                                 </span></a>
                         </li>
-                        <li class="sidebar-item"> <a class="sidebar-link" href="balance.html"
-                                aria-expanded="false"><i data-feather="briefcase" class="feather-icon"></i><span
-                                    class="hide-menu">Финансовый баланс
-                                </span></a>
-                        </li>
                         <li class="list-divider"></li>
-                        <li class="nav-small-cap"><span class="hide-menu">Услуги</span></li>
+                        <li class="nav-small-cap"><span class="hide-menu">Сопровождение</span></li>
                         <li class="sidebar-item"> <a class="sidebar-link" href="ticket-list.html"
                                 aria-expanded="false"><i data-feather="tag" class="feather-icon"></i><span
                                     class="hide-menu">Список обращений
@@ -211,10 +220,12 @@
                                 aria-expanded="false"><i data-feather="message-square" class="feather-icon"></i><span
                                     class="hide-menu">Мои тикеты</span></a></li>
                         <li class="list-divider"></li>
-                        <li class="nav-small-cap"><span class="hide-menu">Дополнительно</span></li>
+                        <li class="nav-small-cap"><span class="hide-menu">События</span></li>
                         <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="app-calendar.html"
                                 aria-expanded="false"><i data-feather="calendar" class="feather-icon"></i><span
-                                    class="hide-menu">Все оповещения</span></a></li>
+                                    class="hide-menu">Все события</span></a></li>
+                        <li class="list-divider"></li>
+                        <li class="nav-small-cap"><span class="hide-menu">Дополнительно</span></li>
                         <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="../../docs/docs.html"
                                 aria-expanded="false"><i data-feather="edit-3" class="feather-icon"></i><span
                                     class="hide-menu">Инструкции</span></a></li>
@@ -226,32 +237,230 @@
             </div>
         </aside>
         <div class="page-wrapper">
-                <div class="page-breadcrumb">
+            <div class="page-breadcrumb">
                 <div class="row">
                     <div class="col-7 align-self-center">
-                        <h3 class="page-title text-truncate text-dark font-weight-medium mb-1">Привет, Владислав Громов!</h3>
+                        <h3 class="page-title text-truncate text-dark font-weight-medium mb-1">Вы можете пополнить баланс либо вывести средства</h3>
                         <div class="d-flex align-items-center">
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb m-0 p-0">
-                                    <li class="breadcrumb-item"><a href="index.html">Главная</a>
+                                    <li class="breadcrumb-item">
+                                        <a href="index.html">Главная > Операционный баланс</a>
                                     </li>
                                 </ol>
                             </nav>
                         </div>
                     </div>
-                    <div class="col-5 align-self-center">
-                        <div class="customize-input float-right">
-                            <select class="custom-select custom-select-set form-control bg-white border-0 custom-shadow custom-radius">
-                                <option selected>Вся статистика</option>
-                                <option value="1">Инвестиционная программа</option>
-                                <option value="2">Парнёрская программа</option>
-                                <option value="2">Продажи услуг</option>
-                            </select>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12 col-lg-8">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title mb-3">Ваш баланс: 412 USD</h4>
+                                <ul class="nav nav-tabs mb-3">
+                                    <li class="nav-item">
+                                        <a href="#home" data-toggle="tab" aria-expanded="false" class="nav-link active">
+                                            <i class="mdi mdi-home-variant d-lg-none d-block mr-1"></i>
+                                            <span>Пополнение</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#profile" data-toggle="tab" aria-expanded="true" class="nav-link">
+                                            <i class="mdi mdi-account-circle d-lg-none d-block mr-1"></i>
+                                            <span>Вывод</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#settings" data-toggle="tab" aria-expanded="false" class="nav-link">
+                                            <i class="mdi mdi-settings-outline d-lg-none d-block mr-1"></i>
+                                            <span>Настройки</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="home">
+                                        <div class="col-12">
+                                            <div class="">
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <div class="col-sm-12 col-lg-3 mb-2 mb-sm-0">
+                                                            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist"
+                                                                aria-orientation="vertical">
+                                                                <a class="nav-link active show" id="v-pills-home-tab" data-toggle="pill"
+                                                                    href="#v-pills-home" role="tab" aria-controls="v-pills-home"
+                                                                    aria-selected="true">
+                                                                    <i class="mdi mdi-home-variant d-lg-none d-block mr-1"></i>
+                                                                    <span>С карты</span>
+                                                                </a>
+                                                                <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill"
+                                                                    href="#v-pills-profile" role="tab" aria-controls="v-pills-profile"
+                                                                    aria-selected="false">
+                                                                    <i class="mdi mdi-account-circle d-lg-none d-block mr-1"></i>
+                                                                    <span>С Bitcoin</span>
+                                                                </a>
+                                                                <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill"
+                                                                    href="#v-pills-settings" role="tab" aria-controls="v-pills-settings"
+                                                                    aria-selected="false">
+                                                                    <i class="mdi mdi-settings-outline d-lg-none d-block mr-1"></i>
+                                                                    <span>C Ethereum</span>
+                                                                </a>
+                                                                <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill"
+                                                                    href="#v-pills-settings" role="tab" aria-controls="v-pills-settings"
+                                                                    aria-selected="false">
+                                                                    <i class="mdi mdi-settings-outline d-lg-none d-block mr-1"></i>
+                                                                    <span>C USDT</span>
+                                                                </a>
+                                                            </div>
+                                                        </div> <!-- end col-->
+                                                        <div class="col-sm-12 col-lg-9">
+                                                            <div class="tab-content" id="v-pills-tabContent">
+                                                                <div class="tab-pane fade active show" id="v-pills-home" role="tabpanel"
+                                                                    aria-labelledby="v-pills-home-tab">
+                                                                    <div class="col-12">
+                                                                        <div class="card">
+                                                                            <div class="card-body">
+                                                                                <h4 class="card-title">Пополнение с карты</h4>
+                                                                                <form class="mt-3 row">
+                                                                                    <div class="form-group col-12">
+                                                                                        <input type="text" class="form-control" id="nametext" aria-describedby="name" placeholder="Номер карты">
+                                                                                        <small id="name" class="form-text text-muted">Введите номер карты, например, 4149 4900 1234 1234</small>
+                                                                                    </div>
+                                                                                    <div class="form-group col-8">
+                                                                                        <input type="text" class="form-control" id="nametext" aria-describedby="name" placeholder="Срок действия">
+                                                                                        <small id="name" class="form-text text-muted">Введите срок действия карты, например, 08/24 номер карты</small>
+                                                                                    </div>
+                                                                                    <div class="form-group col-4">
+                                                                                        <input type="text" class="form-control" id="nametext" aria-describedby="name" placeholder="CVV">
+                                                                                        <small id="name" class="form-text text-muted">CVV-код. Пример кода: 123</small>
+                                                                                    </div>
+                                                                                </form>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                                                                    aria-labelledby="v-pills-profile-tab">
+                                                                    <div class="col-12">
+                                                                        <div class="card">
+                                                                            <div class="card-body">
+                                                                                <h4 class="card-title">Пополнение через Bitcoin</h4>
+                                                                                <form class="mt-3 row">
+                                                                                    <div class="form-group col-12">
+                                                                                        <input type="text" class="form-control" id="nametext" aria-describedby="name" value="0x2134213092314091324102384" disabled="">
+                                                                                        <small id="name" class="form-text text-muted">Отправьте указанную сумму на кошелек компании</small>
+                                                                                    </div>
+                                                                                    <div class="form-group col-8">
+                                                                                        <input type="text" class="form-control" id="nametext" aria-describedby="name" placeholder="Срок действия">
+                                                                                        <small id="name" class="form-text text-muted">Введите срок действия карты, например, 08/24 номер карты</small>
+                                                                                    </div>
+                                                                                    <div class="form-group col-4">
+                                                                                        <input type="text" class="form-control" id="nametext" aria-describedby="name" placeholder="CVV">
+                                                                                        <small id="name" class="form-text text-muted">CVV-код. Пример кода: 123</small>
+                                                                                    </div>
+                                                                                </form>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
+                                                                    aria-labelledby="v-pills-settings-tab">
+                                                                    <p class="mb-0">Food truck quinoa dolor sit amet, consectetuer
+                                                                        adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
+                                                                        sociis
+                                                                        natoque penatibus et magnis dis parturient montes, nascetur
+                                                                        ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+                                                                        eu, pretium quis, sem. Nulla consequat massa quis enim. Cillum ad ut
+                                                                        irure tempor velit nostrud occaecat ullamco
+                                                                        aliqua anim Leggings sint. Veniam sint duis incididunt do esse magna
+                                                                        mollit excepteur laborum qui.</p>
+                                                                </div>
+                                                            </div> <!-- end tab-content-->
+                                                        </div> <!-- end col-->
+                                                    </div>
+                                                    <!-- end row-->
+                                                </div> <!-- end card-body-->
+                                            </div> <!-- end card-->
+                                        </div> <!-- end col -->
+                                    </div>
+                                    <div class="tab-pane show" id="profile">
+                                        <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim
+                                            justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis
+                                            eu pede mollis pretium. Integer tincidunt.Cras dapibus. Vivamus elementum
+                                            semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor
+                                            eu, consequat vitae, eleifend ac, enim.</p>
+                                        <p class="mb-0">Food truck quinoa dolor sit amet, consectetuer adipiscing elit.
+                                            Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
+                                            et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+                                            ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
+                                            quis enim.</p>
+                                    </div>
+                                    <div class="tab-pane" id="settings">
+                                        <p>Food truck quinoa dolor sit amet, consectetuer adipiscing elit. Aenean
+                                            commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et
+                                            magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+                                            ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
+                                            quis enim.</p>
+                                        <p class="mb-0">Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
+                                            arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam
+                                            dictum felis eu pede mollis pretium. Integer tincidunt.Cras dapibus. Vivamus
+                                            elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula,
+                                            porttitor eu, consequat vitae, eleifend ac, enim.</p>
+                                    </div>
+                                </div>
+                            </div> <!-- end card-body-->
+                        </div> <!-- end card-->
+                    </div> <!-- end col -->
+                    <div class="col-sm-12 col-lg-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Последние события</h4>
+                                <div class="mt-4 activity">
+                                    <div class="d-flex align-items-start border-left-line pb-3">
+                                        <div>
+                                            <a href="javascript:void(0)" class="btn btn-warning text-white btn-circle mb-2 btn-item">
+                                                <i data-feather="shopping-cart"></i>
+                                            </a>
+                                        </div>
+                                        <div class="ml-3 mt-2">
+                                            <h5 class="text-dark font-weight-medium mb-2">Продажа франшизы</h5>
+                                            <p class="font-14 mb-2 text-muted">Ваш партнёр Иван Иванов приобрел франшизу #1. Поздравляем! Ваш бонус: $23.</p>
+                                            <span class="font-weight-light font-14 text-muted">10 мин назад</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-start border-left-line pb-3">
+                                        <div>
+                                            <a href="javascript:void(0)"
+                                                class="btn btn-warning text-white btn-circle mb-2 btn-item">
+                                                <i data-feather="message-square"></i>
+                                            </a>
+                                        </div>
+                                        <div class="ml-3 mt-2">
+                                            <h5 class="text-dark font-weight-medium mb-2">Новый запрос в поддержку</h5>
+                                            <p class="font-14 mb-2 text-muted">Ваш партнёр Богдан Фёдоров задал вопрос в тикет-системе. Ответьте!</p>
+                                            <span class="font-weight-light font-14 text-muted">25 мин назад</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-start border-left-line">
+                                        <div>
+                                            <a href="javascript:void(0)" class="btn btn-warning text-white btn-circle mb-2 btn-item">
+                                                <i data-feather="bell"></i>
+                                            </a>
+                                        </div>
+                                        <div class="ml-3 mt-2">
+                                            <h5 class="text-dark font-weight-medium mb-2">Вы пополнили счет на <span>12312</span> USD!
+                                            </h5>
+                                            <p class="font-14 mb-2 text-muted">Теперь ваш баланс составляет <span>541123</span> USD. Используйте все возможности платформы!</p>
+                                            <span class="font-weight-light font-14 mb-1 d-block text-muted">2 ч назад</span>
+                                            <a href="javascript:void(0)" class="font-14 border-bottom pb-1 border-info">Load More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-                <div class="container-fluid">
                 <div class="card-group">
                     <div class="card border-right">
                         <div class="card-body">
@@ -307,7 +516,7 @@
                             <div class="d-flex d-lg-flex d-md-block align-items-center">
                                 <div>
                                     <h2 class="text-dark mb-1 font-weight-medium"><sup class="set-doller">$</sup>864</h2>
-                                    <h6 class="text-muted font-weight-normal mb-0 w-100 text-truncate">общий доход</h6>
+                                    <h6 class="text-muted font-weight-normal mb-0 w-100 text-truncate">общий заработок</h6>
                                 </div>
                                 <div class="ml-auto mt-md-3 mt-lg-0">
                                     <span class="opacity-7 text-muted"><i data-feather="globe"></i></span>
@@ -456,7 +665,7 @@
                                 <div class="mt-4 activity">
                                     <div class="d-flex align-items-start border-left-line pb-3">
                                         <div>
-                                            <a href="javascript:void(0)" class="btn btn-warning text-white btn-circle mb-2 btn-item">
+                                            <a href="javascript:void(0)" class="btn btn-info btn-circle mb-2 btn-item">
                                                 <i data-feather="shopping-cart"></i>
                                             </a>
                                         </div>
@@ -469,7 +678,7 @@
                                     <div class="d-flex align-items-start border-left-line pb-3">
                                         <div>
                                             <a href="javascript:void(0)"
-                                                class="btn btn-warning text-white btn-circle mb-2 btn-item">
+                                                class="btn btn-danger btn-circle mb-2 btn-item">
                                                 <i data-feather="message-square"></i>
                                             </a>
                                         </div>
@@ -481,7 +690,7 @@
                                     </div>
                                     <div class="d-flex align-items-start border-left-line">
                                         <div>
-                                            <a href="javascript:void(0)" class="btn btn-warning text-white btn-circle mb-2 btn-item">
+                                            <a href="javascript:void(0)" class="btn btn-cyan btn-circle mb-2 btn-item">
                                                 <i data-feather="bell"></i>
                                             </a>
                                         </div>
@@ -490,7 +699,7 @@
                                             </h5>
                                             <p class="font-14 mb-2 text-muted">Теперь ваш баланс составляет <span>541123</span> USD. Используйте все возможности платформы!</p>
                                             <span class="font-weight-light font-14 mb-1 d-block text-muted">2 ч назад</span>
-                                            <a href="javascript:void(0)" class="font-14 pb-1 border-info text-warning">Посмотреть больше</a>
+                                            <a href="javascript:void(0)" class="font-14 border-bottom pb-1 border-info">Load More</a>
                                         </div>
                                     </div>
                                 </div>
@@ -512,8 +721,7 @@
                                                 <i data-feather="more-vertical"></i>
                                             </button>
                                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dd1">
-                                                <a class="dropdown-item disabled text-muted" href="#">Посмотреть детальную информацию</a>
-                                                <a class="dropdown-item" href="#">Пригласить нового партнёра</a>
+                                                <a class="dropdown-item" href="#">Посмотреть детальную информацию</a>
                                             </div>
                                         </div>
                                     </div>
@@ -522,8 +730,6 @@
                                     <table class="table no-wrap v-middle mb-0">
                                         <thead>
                                             <tr class="border-0">
-                                                <th class="border-0 font-14 font-weight-medium text-muted">ID
-                                                </th>
                                                 <th class="border-0 font-14 font-weight-medium text-muted">Имя и почта
                                                 </th>
                                                 <th class="border-0 font-14 font-weight-medium text-muted px-2">Источник
@@ -539,7 +745,6 @@
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td class="border-top-0 text-muted px-2 py-4 font-14">1</td>
                                                 <td class="border-top-0 px-2 py-4">
                                                     <div class="d-flex no-block align-items-center">
                                                         <div class="mr-3"><img
@@ -564,7 +769,6 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td class="text-muted px-2 py-4 font-14">123</td>
                                                 <td class="px-2 py-4">
                                                     <div class="d-flex no-block align-items-center">
                                                         <div class="mr-3"><img
@@ -587,7 +791,6 @@
                                                 <td class="font-weight-medium text-dark px-2 py-4 text-center">$213</td>
                                             </tr>
                                             <tr>
-                                                <td class="text-muted px-2 py-4 font-14">423</td>
                                                 <td class="px-2 py-4">
                                                     <div class="d-flex no-block align-items-center">
                                                         <div class="mr-3"><img
@@ -610,7 +813,6 @@
                                                 <td class="font-weight-medium text-dark px-2 py-4 text-center">$123</td>
                                             </tr>
                                             <tr>
-                                                <td class="text-muted px-2 py-4 font-14">2313</td>
                                                 <td class="px-2 py-4">
                                                     <div class="d-flex no-block align-items-center">
                                                         <div class="mr-3"><img
@@ -649,8 +851,6 @@
                                     <table class="table no-wrap v-middle mb-0">
                                         <thead>
                                             <tr class="border-0">
-                                                <th class="border-0 font-14 font-weight-medium text-muted">ID
-                                                </th>
                                                 <th class="border-0 font-14 font-weight-medium text-muted">Партнёр
                                                 </th>
                                                 <th class="border-0 font-14 font-weight-medium text-muted px-2">Продукт
@@ -663,7 +863,6 @@
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td class="border-top-0 text-muted px-2 py-4 font-14">1312</td>
                                                 <td class="border-top-0 px-2 py-4">
                                                     <div class="d-flex no-block align-items-center">
                                                         <div class="mr-3"><img
@@ -685,7 +884,6 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td class="text-muted px-2 py-4 font-14">12341</td>
                                                 <td class="px-2 py-4">
                                                     <div class="d-flex no-block align-items-center">
                                                         <div class="mr-3"><img
@@ -704,7 +902,6 @@
                                                 <td class="font-weight-medium text-dark px-2 py-4 text-center">$320</td>
                                             </tr>
                                             <tr>
-                                                <td class="text-muted px-2 py-4 font-14">652</td>
                                                 <td class="px-2 py-4">
                                                     <div class="d-flex no-block align-items-center">
                                                         <div class="mr-3"><img
@@ -723,7 +920,6 @@
                                                 <td class="font-weight-medium text-dark px-2 py-4 text-center">$1000</td>
                                             </tr>
                                             <tr>
-                                                <td class="text-muted px-2 py-4 font-14">674</td>
                                                 <td class="px-2 py-4">
                                                     <div class="d-flex no-block align-items-center">
                                                         <div class="mr-3"><img
@@ -750,7 +946,8 @@
                 </div>
             </div>
                 <footer class="footer text-center text-muted">
-                Все права защищены. Разработно студией <a class="text-warning" href="https://sousmlm.com">SousMLM</a>.
+                Все права защищены. Разработно студией <a
+                    href="https://sousmlm.com">SousMLM</a>.
             </footer>
             </div>
     </div>
