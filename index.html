@@ -36,10 +36,10 @@
                     <div class="navbar-brand">
                         <a href="index.html">
                             <b class="logo-icon">
-                                <img src="assets/images/logo-icon.svg" alt="homepage" class="w-30" />
+                                <img src="assets/images/logo-icon.svg" alt="homepage" class="" />
                             </b>
                             <span class="logo-text">
-                                <img src="assets/images/logo-text.svg" alt="homepage" class="w-50" />
+                                <img src="assets/images/logo-text.svg" alt="homepage" class="" />
                             </span>
                         </a>
                     </div>
@@ -145,6 +145,9 @@
                             </a>
                         </li>
                         <li class="nav-item d-none d-md-block">
+                            <button type="button" class="btn btn-warning text-white mt-3" data-toggle="modal" data-target="#myModal">Пополнить/вывести</button>
+                        </li>
+                        <li class="nav-item d-none d-md-block">
                             <a class="nav-link" href="javascript:void(0)">
                                 <form class="d-flex">
                                     <div class="customize-input" data-toggle="tooltip" title="Реферальная ссылка. Скопируйте и отправьте тому, кого хотите пригласить.">
@@ -160,7 +163,7 @@
                                 aria-haspopup="true" aria-expanded="false">
                                 <img src="assets/images/users/profile-pic.jpg" alt="user" class="rounded-circle"
                                     width="40">
-                                <span class="ml-2 d-none d-lg-inline-block"><span>Привет,</span> <span
+                                <span class="ml-2 d-none d-lg-inline-block"><span></span> <span
                                         class="text-dark">Владислав Громов</span> <i data-feather="chevron-down"
                                         class="svg-icon"></i></span>
                             </a>
@@ -188,28 +191,7 @@
                                 <span class="hide-menu">Главная</span>
                             </a>
                         </li>
-                        <li class="list-divider"></li>
-                        <li class="nav-small-cap"><span class="hide-menu">Финансы</span></li>
-                        <li class="sidebar-item"> <a class="sidebar-link" href="balance.html"
-                                aria-expanded="false"><i data-feather="dollar-sign" class="feather-icon"></i><span
-                                    class="hide-menu">Операционный баланс
-                                </span></a>
-                        </li>
-                        <li class="sidebar-item"> <a class="sidebar-link" href="balance.html"
-                                aria-expanded="false"><i data-feather="briefcase" class="feather-icon"></i><span
-                                    class="hide-menu">Финансовый баланс
-                                </span></a>
-                        </li>
-                        <li class="list-divider"></li>
-                        <li class="nav-small-cap"><span class="hide-menu">Услуги</span></li>
-                        <li class="sidebar-item"> <a class="sidebar-link" href="ticket-list.html"
-                                aria-expanded="false"><i data-feather="tag" class="feather-icon"></i><span
-                                    class="hide-menu">Список обращений
-                                </span></a>
-                        </li>
-                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="app-chat.html"
-                                aria-expanded="false"><i data-feather="message-square" class="feather-icon"></i><span
-                                    class="hide-menu">Мои тикеты</span></a></li>
+                        
                         <li class="list-divider"></li>
                         <li class="nav-small-cap"><span class="hide-menu">Дополнительно</span></li>
                         <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="app-calendar.html"
@@ -226,7 +208,7 @@
             </div>
         </aside>
         <div class="page-wrapper">
-                <div class="page-breadcrumb">
+            <div class="page-breadcrumb">
                 <div class="row">
                     <div class="col-7 align-self-center">
                         <h3 class="page-title text-truncate text-dark font-weight-medium mb-1">Привет, Владислав Громов!</h3>
@@ -251,7 +233,7 @@
                     </div>
                 </div>
             </div>
-                <div class="container-fluid">
+            <div class="container-fluid">
                 <div class="card-group">
                     <div class="card border-right">
                         <div class="card-body">
@@ -285,19 +267,15 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card border-right">
+                    <div class="card">
                         <div class="card-body">
                             <div class="d-flex d-lg-flex d-md-block align-items-center">
                                 <div>
-                                    <div class="d-inline-flex align-items-center">
-                                        <h2 class="text-dark mb-1 font-weight-medium">5%</h2>
-                                        <span
-                                            class="badge bg-orange font-12 text-white font-weight-medium badge-pill ml-2 d-md-none d-lg-block">-1.33%</span>
-                                    </div>
-                                    <h6 class="text-muted font-weight-normal mb-0 w-100 text-truncate">средний процент (мес)</h6>
+                                    <h2 class="text-dark mb-1 font-weight-medium"><sup class="set-doller">$</sup>1234</h2>
+                                    <h6 class="text-muted font-weight-normal mb-0 w-100 text-truncate">всего пополнений</h6>
                                 </div>
                                 <div class="ml-auto mt-md-3 mt-lg-0">
-                                    <span class="opacity-7 text-muted"><i data-feather="file-plus"></i></span>
+                                    <span class="opacity-7 text-muted"><i data-feather="globe"></i></span>
                                 </div>
                             </div>
                         </div>
@@ -306,8 +284,8 @@
                         <div class="card-body">
                             <div class="d-flex d-lg-flex d-md-block align-items-center">
                                 <div>
-                                    <h2 class="text-dark mb-1 font-weight-medium"><sup class="set-doller">$</sup>864</h2>
-                                    <h6 class="text-muted font-weight-normal mb-0 w-100 text-truncate">общий доход</h6>
+                                    <h2 class="text-dark mb-1 font-weight-medium"><sup class="set-doller">$</sup>1234</h2>
+                                    <h6 class="text-muted font-weight-normal mb-0 w-100 text-truncate">всего выведено</h6>
                                 </div>
                                 <div class="ml-auto mt-md-3 mt-lg-0">
                                     <span class="opacity-7 text-muted"><i data-feather="globe"></i></span>
@@ -320,7 +298,7 @@
                     <div class="col-lg-4 col-md-12">
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title">Источники дохода</h4>
+                                <h4 class="card-title">Общий доход: $124312</h4>
                                 <div id="campaign-v2" class="mt-2" style="height:283px; width:100%;"></div>
                                 <ul class="list-style-none mb-0">
                                     <li>
@@ -344,107 +322,10 @@
                     <div class="col-lg-4 col-md-12">
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title">Доход по месяцам*</h4>
+                                <h4 class="card-title">Средний процент в мес 5,4%*</h4>
                                 <div class="net-income mt-4 position-relative" style="height:294px;"></div>
                                 <ul class="list-inline text-center mt-5 mb-2">
-                                    <li class="list-inline-item text-muted font-italic">*с учетом инвестиций и бонусов</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="card-title mb-4">География партнёров</h4>
-                                <div class="" style="height:180px">
-                                    <div id="visitbylocate" style="height:100%"></div>
-                                </div>
-                                <div class="row mb-3 align-items-center mt-1 mt-5">
-                                    <div class="col-4 text-right">
-                                        <span class="text-muted font-14">Казахстан</span>
-                                    </div>
-                                    <div class="col-5">
-                                        <div class="progress" style="height: 5px;">
-                                            <div class="progress-bar bg-primary" role="progressbar" style="width: 100%"
-                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-3 text-right">
-                                        <span class="mb-0 font-14 text-dark font-weight-medium">28%</span>
-                                    </div>
-                                </div>
-                                <div class="row mb-3 align-items-center">
-                                    <div class="col-4 text-right">
-                                        <span class="text-muted font-14">Россия</span>
-                                    </div>
-                                    <div class="col-5">
-                                        <div class="progress" style="height: 5px;">
-                                            <div class="progress-bar bg-danger" role="progressbar" style="width: 74%"
-                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-3 text-right">
-                                        <span class="mb-0 font-14 text-dark font-weight-medium">21%</span>
-                                    </div>
-                                </div>
-                                <div class="row mb-3 align-items-center">
-                                    <div class="col-4 text-right">
-                                        <span class="text-muted font-14">Беларусь</span>
-                                    </div>
-                                    <div class="col-5">
-                                        <div class="progress" style="height: 5px;">
-                                            <div class="progress-bar bg-cyan" role="progressbar" style="width: 60%"
-                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-3 text-right">
-                                        <span class="mb-0 font-14 text-dark font-weight-medium">18%</span>
-                                    </div>
-                                </div>
-                                <div class="row align-items-center">
-                                    <div class="col-4 text-right">
-                                        <span class="text-muted font-14">Украина</span>
-                                    </div>
-                                    <div class="col-5">
-                                        <div class="progress" style="height: 5px;">
-                                            <div class="progress-bar bg-success" role="progressbar" style="width: 50%"
-                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-3 text-right">
-                                        <span class="mb-0 font-14 text-dark font-weight-medium">12%</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6 col-lg-8">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="d-flex align-items-start">
-                                    <h4 class="card-title mb-0">Статистика дивидендов</h4>
-                                    <div class="ml-auto">
-                                        <div class="dropdown sub-dropdown">
-                                            <button class="btn btn-link text-muted dropdown-toggle" type="button"
-                                                id="dd1" data-toggle="dropdown" aria-haspopup="true"
-                                                aria-expanded="false">
-                                                <i data-feather="more-vertical"></i>
-                                            </button>
-                                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dd1">
-                                                <a class="dropdown-item" href="#">Обновить</a>
-                                                <a class="dropdown-item" href="#">За всё время</a>
-                                                <a class="dropdown-item" href="#">Скачать отчет</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="pl-4 mb-5">
-                                    <div class="stats ct-charts position-relative" style="height: 315px;"></div>
-                                </div>
-                                <ul class="list-inline text-center mt-4 mb-0">
-                                    <li class="list-inline-item text-muted font-italic">Дивиденды начисляются раз в неделю. процент дивидендов зависит от общей суммы инвестиций на текущий момент. Для инвестиций до $1000 действуют начисления 3% в неделю, для инвестиций от $1000 до $10 000 действубт начисления по 5%.</li>
+                                    <li class="list-inline-item text-muted font-italic">*общий процент заработка по месяцам</li>
                                 </ul>
                             </div>
                         </div>
@@ -452,7 +333,7 @@
                     <div class="col-md-6 col-lg-4">
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title">Последние события</h4>
+                                <h4 class="card-title">История дивидендов</h4>
                                 <div class="mt-4 activity">
                                     <div class="d-flex align-items-start border-left-line pb-3">
                                         <div>
@@ -462,7 +343,7 @@
                                         </div>
                                         <div class="ml-3 mt-2">
                                             <h5 class="text-dark font-weight-medium mb-2">Продажа франшизы</h5>
-                                            <p class="font-14 mb-2 text-muted">Ваш партнёр Иван Иванов приобрел франшизу #1. Поздравляем! Ваш бонус: $23.</p>
+                                            <p class="font-14 mb-2 text-muted">Ваш партнёр Иван Иванов приобрел франшизу #1. Ваш бонус: $23.</p>
                                             <span class="font-weight-light font-14 text-muted">10 мин назад</span>
                                         </div>
                                     </div>
@@ -486,9 +367,9 @@
                                             </a>
                                         </div>
                                         <div class="ml-3 mt-2">
-                                            <h5 class="text-dark font-weight-medium mb-2">Вы пополнили счет на <span>12312</span> USD!
+                                            <h5 class="text-dark font-weight-medium mb-2">Пополнение счета на $<span>12312</span>
                                             </h5>
-                                            <p class="font-14 mb-2 text-muted">Теперь ваш баланс составляет <span>541123</span> USD. Используйте все возможности платформы!</p>
+                                            <p class="font-14 mb-2 text-muted">Используйте все возможности платформы!</p>
                                             <span class="font-weight-light font-14 mb-1 d-block text-muted">2 ч назад</span>
                                             <a href="javascript:void(0)" class="font-14 pb-1 border-info text-warning">Посмотреть больше</a>
                                         </div>
@@ -499,47 +380,38 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-lg-8 col-md-12">
                         <div class="card">
                             <div class="card-body">
                                 <div class="d-flex align-items-center mb-4">
                                     <h4 class="card-title">Партнёры</h4>
                                     <div class="ml-auto">
-                                        <div class="dropdown sub-dropdown">
-                                            <button class="btn btn-link text-muted dropdown-toggle" type="button"
-                                                id="dd1" data-toggle="dropdown" aria-haspopup="true"
-                                                aria-expanded="false">
-                                                <i data-feather="more-vertical"></i>
-                                            </button>
-                                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dd1">
-                                                <a class="dropdown-item disabled text-muted" href="#">Посмотреть детальную информацию</a>
-                                                <a class="dropdown-item" href="#">Пригласить нового партнёра</a>
+                                        <form class="d-flex">
+                                            <div class="customize-input d-flex align-items-center" data-toggle="tooltip" title="Реферальная ссылка. Скопируйте и отправьте тому, кого хотите пригласить.">
+                                                <input class="form-control custom-shadow custom-radius border-0 bg-white text-dark pl-3 pr-3" value="monegra.space/?ref=1241212" aria-label="reflink" disabled="">
+                                                <i class="form-control-icon icon-docs ml-3"></i>
                                             </div>
-                                        </div>
+                                        </form>
                                     </div>
                                 </div>
                                 <div class="table-responsive">
                                     <table class="table no-wrap v-middle mb-0">
                                         <thead>
                                             <tr class="border-0">
-                                                <th class="border-0 font-14 font-weight-medium text-muted">ID
-                                                </th>
+                                                <th class="border-0"></th>
                                                 <th class="border-0 font-14 font-weight-medium text-muted">Имя и почта
                                                 </th>
                                                 <th class="border-0 font-14 font-weight-medium text-muted px-2">Источник
                                                 </th>
-                                                <th class="border-0 font-14 font-weight-medium text-muted text-center">
-                                                    Статус
-                                                </th>
-                                                <th class="border-0 font-14 font-weight-medium text-muted text-center">
-                                                    Дата регистрации
-                                                </th>
-                                                <th class="border-0 font-14 font-weight-medium text-muted text-center">Сумма бонусов</th>
+                                                <th class="border-0 font-14 font-weight-medium text-muted text-center">Бонусы</th>
+                                                <th class="border-0"></th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td class="border-top-0 text-muted px-2 py-4 font-14">1</td>
+                                                <td class="border-top-0 text-center px-2 py-4"><i
+                                                        class="fa fa-circle text-primary font-12" data-toggle="tooltip"
+                                                        data-placement="top" title="новичок"></i></td>
                                                 <td class="border-top-0 px-2 py-4">
                                                     <div class="d-flex no-block align-items-center">
                                                         <div class="mr-3"><img
@@ -552,19 +424,26 @@
                                                         </div>
                                                     </div>
                                                 </td>
-                                                <td class="border-top-0 text-muted px-2 py-4 font-14">социальные сети</td>
-                                                <td class="border-top-0 text-center px-2 py-4"><i
-                                                        class="fa fa-circle text-primary font-12" data-toggle="tooltip"
-                                                        data-placement="top" title="новичок"></i></td>
-                                                <td
-                                                    class="border-top-0 text-center font-weight-medium text-muted px-2 py-4">
-                                                    35
-                                                </td>
+                                                <td class="border-top-0 text-muted px-2 py-4 font-14">соц. сети</td>
                                                 <td class="font-weight-medium text-dark border-top-0 px-2 py-4 text-center">$123
+                                                </td>
+                                                <td class="border-top-0 dropdown sub-dropdown">
+                                                    <button class="btn btn-link text-muted dropdown-toggle" type="button"
+                                                        id="dd1" data-toggle="dropdown" aria-haspopup="true"
+                                                        aria-expanded="false">
+                                                        <i data-feather="more-vertical"></i>
+                                                    </button>
+                                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dd1">
+                                                        <a class="dropdown-item disabled text-muted" href="#">Посмотреть детальную информацию</a>
+                                                        <a class="dropdown-item disabled text-muted" href="#">Передать партнёра другому наставнику</a>
+                                                    </div>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td class="text-muted px-2 py-4 font-14">123</td>
+                                                <td class="text-center px-2 py-4"><i
+                                                        class="fa fa-circle text-success font-12" data-toggle="tooltip"
+                                                        data-placement="top" title="опытный"></i>
+                                                </td>
                                                 <td class="px-2 py-4">
                                                     <div class="d-flex no-block align-items-center">
                                                         <div class="mr-3"><img
@@ -578,16 +457,25 @@
                                                         </div>
                                                     </div>
                                                 </td>
-                                                <td class="text-muted px-2 py-4 font-14">Реферал от компании</td>
-                                                <td class="text-center px-2 py-4"><i
-                                                        class="fa fa-circle text-success font-12" data-toggle="tooltip"
-                                                        data-placement="top" title="опытный"></i>
-                                                </td>
-                                                <td class="text-center text-muted font-weight-medium px-2 py-4">32</td>
+                                                <td class="text-muted px-2 py-4 font-14">соц. сети</td>
                                                 <td class="font-weight-medium text-dark px-2 py-4 text-center">$213</td>
+                                                <td class="dropdown sub-dropdown">
+                                                    <button class="btn btn-link text-muted dropdown-toggle" type="button"
+                                                        id="dd1" data-toggle="dropdown" aria-haspopup="true"
+                                                        aria-expanded="false">
+                                                        <i data-feather="more-vertical"></i>
+                                                    </button>
+                                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dd1">
+                                                        <a class="dropdown-item disabled text-muted" href="#">Посмотреть детальную информацию</a>
+                                                        <a class="dropdown-item disabled text-muted" href="#">Передать партнёра другому наставнику</a>
+                                                    </div>
+                                                </td>
                                             </tr>
                                             <tr>
-                                                <td class="text-muted px-2 py-4 font-14">423</td>
+                                                <td class="text-center px-2 py-4"><i
+                                                        class="fa fa-circle text-primary font-12" data-toggle="tooltip"
+                                                        data-placement="top" title="Новичок"></i>
+                                                </td>
                                                 <td class="px-2 py-4">
                                                     <div class="d-flex no-block align-items-center">
                                                         <div class="mr-3"><img
@@ -601,16 +489,24 @@
                                                         </div>
                                                     </div>
                                                 </td>
-                                                <td class="text-muted px-2 py-4 font-14">Таргетированная реклама</td>
-                                                <td class="text-center px-2 py-4"><i
-                                                        class="fa fa-circle text-primary font-12" data-toggle="tooltip"
-                                                        data-placement="top" title="Новичок"></i>
-                                                </td>
-                                                <td class="text-center text-muted font-weight-medium px-2 py-4">29</td>
+                                                <td class="text-muted px-2 py-4 font-14">Таргет</td>
                                                 <td class="font-weight-medium text-dark px-2 py-4 text-center">$123</td>
+                                                <td class="dropdown sub-dropdown">
+                                                    <button class="btn btn-link text-muted dropdown-toggle" type="button"
+                                                        id="dd1" data-toggle="dropdown" aria-haspopup="true"
+                                                        aria-expanded="false">
+                                                        <i data-feather="more-vertical"></i>
+                                                    </button>
+                                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dd1">
+                                                        <a class="dropdown-item disabled text-muted" href="#">Посмотреть детальную информацию</a>
+                                                        <a class="dropdown-item disabled text-muted" href="#">Передать партнёра другому наставнику</a>
+                                                    </div>
+                                                </td>
                                             </tr>
                                             <tr>
-                                                <td class="text-muted px-2 py-4 font-14">2313</td>
+                                                <td class="text-center px-2 py-4"><i
+                                                        class="fa fa-circle text-danger font-12" data-toggle="tooltip"
+                                                        data-placement="top" title="Приглашение отправлено"></i></td>
                                                 <td class="px-2 py-4">
                                                     <div class="d-flex no-block align-items-center">
                                                         <div class="mr-3"><img
@@ -624,15 +520,70 @@
                                                         </div>
                                                     </div>
                                                 </td>
-                                                <td class="text-muted px-2 py-4 font-14">Личное приглашение</td>
-                                                <td class="text-center px-2 py-4"><i
-                                                        class="fa fa-circle text-danger font-12" data-toggle="tooltip"
-                                                        data-placement="top" title="Приглашение отправлено"></i></td>
-                                                <td class="text-center text-muted font-weight-medium px-2 py-4">23</td>
+                                                <td class="text-muted px-2 py-4 font-14">Приглашение</td>
                                                 <td class="font-weight-medium text-dark px-2 py-4 text-center">$0</td>
+                                                <td class="dropdown sub-dropdown">
+                                                    <button class="btn btn-link text-muted dropdown-toggle" type="button"
+                                                        id="dd1" data-toggle="dropdown" aria-haspopup="true"
+                                                        aria-expanded="false">
+                                                        <i data-feather="more-vertical"></i>
+                                                    </button>
+                                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dd1">
+                                                        <a class="dropdown-item disabled text-muted" href="#">Посмотреть детальную информацию</a>
+                                                        <a class="dropdown-item disabled text-muted" href="#">Передать партнёра другому наставнику</a>
+                                                    </div>
+                                                </td>
                                             </tr>
                                         </tbody>
                                     </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Последние события</h4>
+                                <div class="mt-4 activity">
+                                    <div class="d-flex align-items-start border-left-line pb-3">
+                                        <div>
+                                            <a href="javascript:void(0)" class="btn btn-warning text-white btn-circle mb-2 btn-item">
+                                                <i data-feather="shopping-cart"></i>
+                                            </a>
+                                        </div>
+                                        <div class="ml-3 mt-2">
+                                            <h5 class="text-dark font-weight-medium mb-2">Продажа франшизы</h5>
+                                            <p class="font-14 mb-2 text-muted">Ваш партнёр Иван Иванов приобрел франшизу #1. Ваш бонус: $23.</p>
+                                            <span class="font-weight-light font-14 text-muted">10 мин назад</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-start border-left-line pb-3">
+                                        <div>
+                                            <a href="javascript:void(0)"
+                                                class="btn btn-warning text-white btn-circle mb-2 btn-item">
+                                                <i data-feather="message-square"></i>
+                                            </a>
+                                        </div>
+                                        <div class="ml-3 mt-2">
+                                            <h5 class="text-dark font-weight-medium mb-2">Новый запрос в поддержку</h5>
+                                            <p class="font-14 mb-2 text-muted">Ваш партнёр Богдан Фёдоров задал вопрос в тикет-системе. Ответьте!</p>
+                                            <span class="font-weight-light font-14 text-muted">25 мин назад</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-start border-left-line">
+                                        <div>
+                                            <a href="javascript:void(0)" class="btn btn-warning text-white btn-circle mb-2 btn-item">
+                                                <i data-feather="bell"></i>
+                                            </a>
+                                        </div>
+                                        <div class="ml-3 mt-2">
+                                            <h5 class="text-dark font-weight-medium mb-2">Пополнение счета на $<span>12312</span>
+                                            </h5>
+                                            <p class="font-14 mb-2 text-muted">Используйте все возможности платформы!</p>
+                                            <span class="font-weight-light font-14 mb-1 d-block text-muted">2 ч назад</span>
+                                            <a href="javascript:void(0)" class="font-14 pb-1 border-info text-warning">Посмотреть больше</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -752,8 +703,9 @@
                 <footer class="footer text-center text-muted">
                 Все права защищены. Разработно студией <a class="text-warning" href="https://sousmlm.com">SousMLM</a>.
             </footer>
-            </div>
+        </div>
     </div>
+
     <script src="assets/libs/jquery/dist/jquery.min.js"></script>
     <script src="assets/libs/popper.js/dist/umd/popper.min.js"></script>
     <script src="assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
