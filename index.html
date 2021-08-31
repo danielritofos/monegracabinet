@@ -715,12 +715,11 @@
     <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel">Операционный баланс</h4>
+                <div class="modal-header border-0">
+                    <h4 class="modal-title" id="myModalLabel">Операционный баланс: 412 USD</h4>
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                 </div>
-                <div class="modal-body">
-                    <h4 class="card-title mb-3">Ваш баланс: 412 USD</h4>
+                <div class="modal-body pt-0">
                     <ul class="nav nav-tabs mb-3">
                         <li class="nav-item">
                             <a href="#home" data-toggle="tab" aria-expanded="false" class="nav-link active">
@@ -737,7 +736,7 @@
                         <li class="nav-item">
                             <a href="#settings" data-toggle="tab" aria-expanded="false" class="nav-link">
                                 <i class="mdi mdi-settings-outline d-lg-none d-block mr-1"></i>
-                                <span>Перевод на финансовый</span>
+                                <span>Перевод на финансовый баланс</span>
                             </a>
                         </li>
                     </ul>
@@ -762,18 +761,6 @@
                                                         <i class="mdi mdi-account-circle d-lg-none d-block mr-1"></i>
                                                         <span>С Bitcoin</span>
                                                     </a>
-                                                    <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill"
-                                                        href="#v-pills-settings" role="tab" aria-controls="v-pills-settings"
-                                                        aria-selected="false">
-                                                        <i class="mdi mdi-settings-outline d-lg-none d-block mr-1"></i>
-                                                        <span>C Ethereum</span>
-                                                    </a>
-                                                    <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill"
-                                                        href="#v-pills-settings" role="tab" aria-controls="v-pills-settings"
-                                                        aria-selected="false">
-                                                        <i class="mdi mdi-settings-outline d-lg-none d-block mr-1"></i>
-                                                        <span>C USDT</span>
-                                                    </a>
                                                 </div>
                                             </div> <!-- end col-->
                                             <div class="col-sm-12 col-lg-9">
@@ -797,6 +784,13 @@
                                                                             <input type="text" class="form-control" id="nametext" aria-describedby="name" placeholder="CVV">
                                                                             <small id="name" class="form-text text-muted">CVV-код. Пример: 123</small>
                                                                         </div>
+                                                                        <div class="form-group col-8">
+                                                                            <input type="text" class="form-control" id="nametext" aria-describedby="name" placeholder="Сумма пополнения">
+                                                                            <small id="name" class="form-text text-muted">Введите сумму пополнения, например, 100 (USD)</small>
+                                                                        </div>
+                                                                        <div class="form-group col-4">
+                                                                            <input type="submit" class="btn btn-warning text-white w-100" value="Пополнить">
+                                                                        </div>
                                                                     </form>
                                                                 </div>
                                                             </div>
@@ -813,30 +807,26 @@
                                                                             <input type="text" class="form-control" id="nametext" aria-describedby="name" value="0x2134213092314091324102384" disabled="">
                                                                             <small id="name" class="form-text text-muted">Отправьте указанную сумму на кошелек компании</small>
                                                                         </div>
+                                                                        <div class="form-group col-5">
+                                                                            <input type="text" class="form-control" id="nametext" aria-describedby="name" placeholder="0.0001">
+                                                                            <small id="name" class="form-text text-muted">Сумма пополнения в BTC</small>
+                                                                        </div>
+                                                                        <div class="form-group col-2 pt-2">
+                                                                            <span class="opacity-7 text-muted col-12"><i data-feather="repeat"></i></span>
+                                                                        </div>
+                                                                        <div class="form-group col-5">
+                                                                            <input type="text" class="form-control" id="nametext" aria-describedby="name" placeholder="" value="$12341" disabled="">
+                                                                            <small id="name" class="form-text text-muted">Сумма пополнения в USD</small>
+                                                                        </div>
                                                                         <div class="form-group col-8">
-                                                                            <input type="text" class="form-control" id="nametext" aria-describedby="name" placeholder="Срок действия">
-                                                                            <small id="name" class="form-text text-muted">Введите срок действия карты, например, 08/24 номер карты</small>
                                                                         </div>
                                                                         <div class="form-group col-4">
-                                                                            <input type="text" class="form-control" id="nametext" aria-describedby="name" placeholder="CVV">
-                                                                            <small id="name" class="form-text text-muted">CVV-код. Пример кода: 123</small>
+                                                                            <input type="submit" class="btn btn-warning text-white w-100" value="Пополнить">
                                                                         </div>
                                                                     </form>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
-                                                        aria-labelledby="v-pills-settings-tab">
-                                                        <p class="mb-0">Food truck quinoa dolor sit amet, consectetuer
-                                                            adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-                                                            sociis
-                                                            natoque penatibus et magnis dis parturient montes, nascetur
-                                                            ridiculus mus. Donec quam felis, ultricies nec, pellentesque
-                                                            eu, pretium quis, sem. Nulla consequat massa quis enim. Cillum ad ut
-                                                            irure tempor velit nostrud occaecat ullamco
-                                                            aliqua anim Leggings sint. Veniam sint duis incididunt do esse magna
-                                                            mollit excepteur laborum qui.</p>
                                                     </div>
                                                 </div> <!-- end tab-content-->
                                             </div> <!-- end col-->
@@ -873,8 +863,7 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn btn-light" data-dismiss="modal">Закрыть</button>
                 </div>
             </div><!-- /.modal-content -->
         </div><!-- /.modal-dialog -->
